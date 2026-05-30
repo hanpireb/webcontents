@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>About me</title>
+        <style>
+            html, body {
+                padding: 0px;
+                margin: 0px;
+                height: 100%;
+            }
+            
+            header {
+                height: 10%;
+                background: yellow;
+                overflow: hidden;
+                padding: 10px 20px;
+                box-sizing: border-box;
+            }
+            header h1{
+                color:brown;
+            }
+            nav {
+                width: 20%;
+                height: 82%;
+                background: orange;
+                float: left;
+                overflow: hidden;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            
+            section {
+                width: 80%;
+                height: 82%;
+                background: lightblue;
+                float: left;
+                overflow: auto;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            
+            footer {
+                height: 8%;
+                background: plum;
+                clear: left;
+                overflow: hidden;
+                padding: 10px 20px;
+                box-sizing: border-box;
+            }
+
+            h1 {
+                text-align: center;
+                margin: 0 0 5px 0;
+                font-size: 24px;
+            }
+            .intro {
+                font-size: 13px;
+                line-height: 1.4;
+            }
+            .nav-title {
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 15px;
+                color: #000;
+            }
+            nav ul {
+                list-style-type: disc;
+                padding-left: 20px;
+                margin: 0;
+            }
+            nav li {
+                margin-bottom: 8px;
+                font-size: 14px;
+            }
+            .section-title {
+                font-weight: bold;
+                color: blue;
+                font-size: 20px;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+            .interest-list {
+                padding-left: 20px;
+                margin: 0 0 20px 0;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            .interest-list ul {
+                list-style-type: circle;
+                padding-left: 20px;
+            }
+            
+            .hobby-container {
+                display: table;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+            .hobby-images {
+                display: table;
+                width: 100%;
+                table-layout: fixed; 
+                margin-top: 10px;
+            }
+
+            .hobby-item {
+                display: table-cell;
+                width: 33.33%;        
+                text-align: center;
+                padding: 0 5px;       
+                box-sizing: border-box;
+                vertical-align: top;
+            }
+
+            .hobby-item img {
+                width: 100%;          
+                height: 120px;        
+                object-fit: cover;    
+                border: 1px solid #a0c0e0;
+            }
+
+            .hobby-caption {
+                margin-top: 5px;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background-color: lightblue;
+                text-align: center;
+                font-size: 13px;
+            }
+            th, td {
+                border: 1px solid #a0c0e0;
+                padding: 5px;
+                height: 35px;
+            }
+            th {
+                background-color: #ffe699;
+                font-weight: bold;
+            }
+            td.time-col {
+                background-color: #ffe699;
+                font-weight: bold;
+                width: 8%;
+            }
+    
+            .class-pink {
+                background-color: #ffc0cb; 
+            }
+            .class-blue {
+                background-color: #d9e1f2; 
+            }
+            
+            footer p {
+                margin: 2px 0;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>About me</h1>
+            <div class="intro">
+                안녕하세요? 제 이름은 홍길동입니다. 올해 대학교에 입학한 새내기입니다.<br>
+                다양한 관심분야와 취미활동을 하고 있습니다. 즐거운 하루 되세요~
+            </div>
+        </header>
+
+        <nav>
+            <div class="nav-title">목차</div>
+            <ul>
+                <li>관심분야</li>
+                <li>취미활동</li>
+                <li>강의시간표</li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="section-title">관심분야</div>
+            <ul class="interest-list">
+                <li>인공지능
+                    <ul>
+                        <li>머신러닝(Machine Learning)</li>
+                        <li>자연어 처리(Natural Language Processing, NLP)</li>
+                        <li>컴퓨터 비전(Computer Vision)</li>
+                        <li>로보틱스(Robotics)</li>
+                    </ul>
+                </li>
+                <li>사물인터넷(IoT)
+                    <ul>
+                        <li>사물(Things): 센서, 액추에이터 등 통신 기능을 갖춘 다양한 기기</li>
+                        <li>센서(Sensors): 온도, 습도, 빛, 움직임 등 환경 정보를 감지하는 장치</li>
+                        <li>네트워크(Network): 사물과 블루투스가 연결된 통신망(Wi-Fi, Bluetooth, 5G 등)</li>
+                        <li>플랫폼(Platform): 수집된 데이터 저장, 분석, 처리 소프트웨어 시스템</li>
+                    </ul>
+                </li>
+                <li>양자컴퓨터
+                    <ul>
+                        <li>큐비트(Qubit)</li>
+                        <li>중첩(Superposition)</li>
+                        <li>얽힘(Entanglement)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="section-title">취미활동</div>
+            <div class="hobby-container">
+                <div class="hobby-item">
+                    <img src="media/자전거.jpg" alt="Riding">
+                    <div class="hobby-caption">ridding</div>
+                </div>
+                <div class="hobby-item">
+                    <img src="media/러닝.avif" alt="Running">
+                    <div class="hobby-caption">running</div>
+                </div>
+                <div class="hobby-item">
+                    <img src="media/책.jpg" alt="Reading">
+                    <div class="hobby-caption">reading</div>
+                </div>
+            </div>
+
+            <div class="section-title">강의시간표(2026년 1학기)</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="time-col">09</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="time-col">10</td><td></td><td></td><td class="class-pink" rowspan="3">인터넷<br>컨텐츠<br>(101반)</td><td></td><td></td></tr>
+                    <tr><td class="time-col">11</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="time-col">12</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="time-col">13</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="time-col">14</td><td></td><td></td><td class="class-blue" rowspan="3">인터넷<br>컨텐츠<br>(102반)</td><td></td><td></td></tr>
+                    <tr><td class="time-col">15</td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="time-col">16</td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td class="time-col">17</td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>설문조사</p>
+            <p>Copyright 2026 by MYONGJI COLLEGE</p>
+        </footer>
+
+    </body>
+</html>
